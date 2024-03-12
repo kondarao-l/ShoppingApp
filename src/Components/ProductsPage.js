@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
 import '../StyleSheets/productsPage.css'
-import { useSelector, useDispatch } from 'react-redux';
+import {  useDispatch } from 'react-redux';
 import { addToCart } from '../store/actions/addtoCartActions'
 
 function ProductsPage() {
   const dispatch = useDispatch()
-  const cart = useSelector((state) => state.addToCart.cart)
+  //const cart = useSelector((state) => state.addToCart.cart)
   const [search, setsearch] = useState('')
   const [data, setData] = useState([])
   const categories = [
@@ -84,7 +84,7 @@ function ProductsPage() {
           {data.filter(item => item.title.toLowerCase().includes(search.toLowerCase())).map((item, id) => (
             <div key={id} className='product-card'>
               <h1>{item.category}</h1>
-              <img className='product-image' src={item.image} />
+              <img className='product-image' src={item.image} alt='product-img' />
               <p>{item.title.slice(0, limit)}<span onClick={handleLimit}>{item.title.length > limit ? "..." : ""}</span></p>
               <div className='product-price-container'>
                 <h2 className='product-price'> Rs:{item.price}</h2>

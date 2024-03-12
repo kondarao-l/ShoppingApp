@@ -12,8 +12,10 @@
 .card-container {
     display: flex;
     flex-direction:column;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: baseline;
+    margin-left: 18px;
+
 }
 .card-heading2{
     font-size: 45px;
@@ -25,8 +27,7 @@
     font-size: 20px;
     font-style: oblique;
     color: dimgray;
-    
-
+    text-align: left;
 }
 .shopping-button {
     background-color: blue;
@@ -41,7 +42,7 @@
 .wallpaper {
     margin-right: 20px;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 40px;
     
     
 }

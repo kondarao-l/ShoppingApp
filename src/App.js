@@ -1,6 +1,6 @@
 
 import MainFile from './Components/MainFile';
-import Practice from './Components/Practice';
+
 function App() {
   
   return (

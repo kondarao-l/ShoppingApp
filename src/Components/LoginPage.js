@@ -1,18 +1,12 @@
 import React, { useState } from 'react'
-import { Link, redirect } from 'react-router-dom'
 //import cardImg from './Images/istockphoto-1501391264-2048x2048.jpg'
 import backgroundImg from './Images/pexels-robin-1020370.jpg'
 import '../StyleSheets/LoginPage.css'
 import { useNavigate } from 'react-router-dom';
+
 function LoginPage({onSubmit}) {
+
     const navigate = useNavigate();
-
-    // const userDetails =
-    // {
-    //     username: '',
-    //     password: ''
-    // }
-
     const [userName, setUserName] = useState('')
     const [password, setPassword] = useState('')
 

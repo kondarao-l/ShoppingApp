@@ -1,6 +1,5 @@
 import React from 'react'
 import '../StyleSheets/HomePage.css'
-import Header from './Header'
 import image1 from './Images/pexels-photo-3772506.jpeg'
 import { Link } from 'react-router-dom'
 

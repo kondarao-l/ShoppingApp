@@ -1,6 +1,6 @@
 .heading-container {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .header {
     display: flex;

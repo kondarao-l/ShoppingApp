@@ -1,9 +1,9 @@
-import React,{useState} from 'react'
+import React from 'react'
 import '../StyleSheets/Header.css'
 import { Link } from 'react-router-dom'
 import {  useSelector } from 'react-redux'
 function Header() {
-  const [cartCount,setCartCount] = useState()
+  
  const count = useSelector(state=> state.addToCart.counter)
  
   return (

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import '../StyleSheets/cartpage.css'
@@ -41,7 +41,7 @@ function CartPage() {
       {cart.map(eachcartItem =>
         <div className='cart-product-container'>
           <div className='cart-contaier-leftside'>
-            <img className='cart-item-image' src={eachcartItem.image} />
+            <img className='cart-item-image' src={eachcartItem.image} alt='cart-item' />
 
             <div className='title-category-container'>
               <p className='cart-item-title'>{eachcartItem.title}</p>
